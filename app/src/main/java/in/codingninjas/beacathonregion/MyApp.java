@@ -3,9 +3,11 @@ package in.codingninjas.beacathonregion;
 import android.app.Application;
 import android.app.NotificationManager;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.RemoteException;
 import android.support.v4.app.NotificationCompat;
 import android.util.Log;
+import android.widget.Toast;
 
 import org.altbeacon.beacon.BeaconConsumer;
 import org.altbeacon.beacon.BeaconManager;
@@ -17,6 +19,8 @@ import org.altbeacon.beacon.powersave.BackgroundPowerSaver;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 import in.codingninjas.beacathonregion.network.ApiClient;
@@ -40,7 +44,8 @@ public class MyApp extends Application implements BeaconConsumer {
     public HashMap<String,Region> ssnRegionMap;
     public OnListRefreshListener onListRefreshListener;
     public MainActivity context;
-
+    Set<String> mySet;
+    SharedPreferences sharedpreferences;
     public interface OnListRefreshListener {
         void onListRefresh();
     }
@@ -64,13 +69,13 @@ public class MyApp extends Application implements BeaconConsumer {
         regionList = new CopyOnWriteArrayList<>();
         regionNameList = new CopyOnWriteArrayList<>();
 
-        ssnRegionMap.put("0x0117c59825E9",new Region("Test Room",nameSpaceId, Identifier.parse("0x0117c59825E9"),null));
-        ssnRegionMap.put("0x0117c55be3a8",new Region("Git Room",nameSpaceId,Identifier.parse("0x0117c55be3a8"),null));
-        ssnRegionMap.put("0x0117c552c493",new Region("Android Room",nameSpaceId,Identifier.parse("0x0117c552c493"),null));
-        ssnRegionMap.put("0x0117c55fc452",new Region("iOS Room",nameSpaceId,Identifier.parse("0x0117c55fc452"),null));
-        ssnRegionMap.put("0x0117c555c65f",new Region("Python Room",nameSpaceId,Identifier.parse("0x0117c555c65f"),null));
-        ssnRegionMap.put("0x0117c55d6660",new Region("Office",nameSpaceId,Identifier.parse("0x0117c55d6660"),null));
-        ssnRegionMap.put("0x0117c55ec086",new Region("Ruby Room",nameSpaceId,Identifier.parse("0x0117c55ec086"),null));
+        ssnRegionMap.put("0x0117c59825E9",new Region("TEST ROOM",nameSpaceId, Identifier.parse("0x0117c59825E9"),null));
+        ssnRegionMap.put("0x0117c55be3a8",new Region("Sulabh Sochalaya/Washroom",nameSpaceId,Identifier.parse("0x0117c55be3a8"),null));
+        ssnRegionMap.put("0x0117c552c493",new Region("ANDROID ROOM",nameSpaceId,Identifier.parse("0x0117c552c493"),null));
+        ssnRegionMap.put("0x0117c55fc452",new Region("IOS ROOM",nameSpaceId,Identifier.parse("0x0117c55fc452"),null));
+        ssnRegionMap.put("0x0117c555c65f",new Region("PYTHON ROOM",nameSpaceId,Identifier.parse("0x0117c555c65f"),null));
+        ssnRegionMap.put("0x0117c55d6660",new Region("OFFICE",nameSpaceId,Identifier.parse("0x0117c55d6660"),null));
+        ssnRegionMap.put("0x0117c55ec086",new Region("RUBY ROOM",nameSpaceId,Identifier.parse("0x0117c55ec086"),null));
 
         beaconManager = BeaconManager.getInstanceForApplication(this);
         beaconManager.getBeaconParsers().add(new BeaconParser().
@@ -97,14 +102,36 @@ public class MyApp extends Application implements BeaconConsumer {
             public void didDetermineStateForRegion(int i, Region region) {
                 String regionName = region.getUniqueId();
                 String beaconSSN = region.getId2().toHexString();
+                sharedpreferences = getSharedPreferences("TaskDetails", Context.MODE_PRIVATE);
+                SharedPreferences.Editor editor = sharedpreferences.edit();
+
                 switch (i){
                     case INSIDE:
                         Log.i("TAG","Enter " + regionName);
                         regionNameList.add(regionName);
                         regionList.add(region);
+                        Toast.makeText(getApplicationContext(),regionName + "Entered",Toast.LENGTH_LONG).show();
                         MyApp.notifyListChange();
                        // Toast.makeText(getApplicationContext(),"Found beacon",Toast.LENGTH_SHORT).show();
-                       // MyApp.showNotification("Found beacon");
+                        MyApp.showNotification("Found"+regionName+ "the things to do are :");
+
+                        mySet=sharedpreferences.getStringSet(regionName,null);
+                        if(mySet==null){
+
+                            Toast.makeText(getApplicationContext(),"No tasks found for this region",Toast.LENGTH_LONG).show();
+                            editor.commit();
+                        }
+                        else {
+                            String s=new String();
+                            for(String x : mySet){
+                                s=s+x;
+                            }
+                            MyApp.showNotification("Found"+regionName+ "the things to do are :"+s);
+
+                            editor.remove(regionName);
+                            Toast.makeText(getApplicationContext(),"these are removed",Toast.LENGTH_LONG).show();
+                            editor.commit();
+                        }
                         //enterRegion(beaconSSN);
                         break;
                     case OUTSIDE:
@@ -118,7 +145,7 @@ public class MyApp extends Application implements BeaconConsumer {
                         }
                         //exitRegion(beaconSSN);
                       //  MyApp.showNotification("Exit beacon");
-                        // Toast.makeText(getApplicationContext(),"Exit beacon",Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(getApplicationContext(),"Exit beacon",Toast.LENGTH_SHORT).show();
                         break;
                 }
 

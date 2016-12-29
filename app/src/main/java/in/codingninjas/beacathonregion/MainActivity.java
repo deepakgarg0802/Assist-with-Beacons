@@ -19,6 +19,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -51,6 +52,8 @@ public class MainActivity extends AppCompatActivity {
 
     private static String[] mPermissions = { Manifest.permission.ACCESS_FINE_LOCATION};
     private MyApp.OnListRefreshListener onListRefreshListener;
+    Button todobutton;
+
 
     @Override
     protected void onResume() {
@@ -87,7 +90,14 @@ public class MainActivity extends AppCompatActivity {
 
         RoundedImageView imageView = (RoundedImageView)findViewById(R.id.profile_image_view);
         TextView nameTextView = (TextView)findViewById(R.id.name_text_view);
-
+        todobutton= (Button)findViewById(R.id.todo);
+        todobutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(),MyList.class);
+                startActivity(intent);
+            }
+        });
         String profilePicURL = UserUtil.getProfilePicURL();
         if(profilePicURL!=null && !profilePicURL.isEmpty()) {
             Picasso.with(this).load(UserUtil.getProfilePicURL())
