@@ -84,13 +84,40 @@ public class MyApp extends Application implements BeaconConsumer {
         beaconManager.bind(this);
 
     }
+    void showtasks(String regionName){
+        if(regionName.equalsIgnoreCase("Sulabh Sochalaya/Washroom")){
+            MyApp.showNotification("founded washroom :");
+            return;
+        }
+        sharedpreferences = getSharedPreferences("TaskDetails", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedpreferences.edit();
+        mySet=sharedpreferences.getStringSet(regionName,null);
+        if(mySet==null){
 
+            Toast.makeText(getApplicationContext(),"No tasks found for this region",Toast.LENGTH_LONG).show();
+            editor.commit();
+        }
+        else {
+            String s=new String();
+            for(String x : mySet){
+                s=s+x;
+            }
+            MyApp.showNotification(regionName+ "things to do:"+s);
+
+            editor.remove(regionName);
+            Toast.makeText(getApplicationContext(),"these are removed",Toast.LENGTH_LONG).show();
+            editor.commit();
+        }
+    }
     @Override
     public void onBeaconServiceConnect() {
         beaconManager.addMonitorNotifier(new MonitorNotifier() {
             @Override
             public void didEnterRegion(Region region) {
+                String regionName = region.getUniqueId();
+                String beaconSSN = region.getId2().toHexString();
 
+                showtasks(regionName);
             }
 
             @Override
@@ -110,12 +137,13 @@ public class MyApp extends Application implements BeaconConsumer {
                         Log.i("TAG","Enter " + regionName);
                         regionNameList.add(regionName);
                         regionList.add(region);
-                        Toast.makeText(getApplicationContext(),regionName + "Entered",Toast.LENGTH_LONG).show();
+                        //Toast.makeText(getApplicationContext(),regionName + "Entered",Toast.LENGTH_LONG).show();
                         MyApp.notifyListChange();
+                        showtasks(regionName);
                        // Toast.makeText(getApplicationContext(),"Found beacon",Toast.LENGTH_SHORT).show();
-                        MyApp.showNotification("Found"+regionName+ "the things to do are :");
+                        //MyApp.showNotification(regionName+ "the things to do are :");
 
-                        mySet=sharedpreferences.getStringSet(regionName,null);
+                        /*mySet=sharedpreferences.getStringSet(regionName,null);
                         if(mySet==null){
 
                             Toast.makeText(getApplicationContext(),"No tasks found for this region",Toast.LENGTH_LONG).show();
@@ -131,7 +159,7 @@ public class MyApp extends Application implements BeaconConsumer {
                             editor.remove(regionName);
                             Toast.makeText(getApplicationContext(),"these are removed",Toast.LENGTH_LONG).show();
                             editor.commit();
-                        }
+                        }*/
                         //enterRegion(beaconSSN);
                         break;
                     case OUTSIDE:

@@ -20,8 +20,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textCapSentences"
-        android:text="Enter category or Place of beacon"
+        android:inputType="textCapCharacters"
         android:ems="10"
         android:id="@+id/category"
         android:hint="Enter category or Place of beacon" />
@@ -31,7 +30,7 @@
         android:layout_height="wrap_content"
 
         android:inputType="textCapSentences"
-        android:text="Enter the task to do when u r within the range"
+        android:hint="Enter the task to do when u r within the range"
         android:ems="10"
         android:id="@+id/task" />
 
