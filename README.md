@@ -15,3 +15,5 @@ Location Based Reminder + Dustbin/Washroom Finder
 
 ##Restrooms/Dustbins
 Whenever a dustbin or Restroom equipped with beacon is found, notification is sent automatically
+
+To know more about app, please see this [Microsoft Presentation](https://github.com/deepakgarg0802/deepak_hackathon/blob/master/Assist.pptx)
