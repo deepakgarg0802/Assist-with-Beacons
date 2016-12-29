@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="E:\android\Beacathon\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
+        <dex dex="E:\android\Beacathon\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.0.1_cd86f4acb900567fc848bc96acf563d04b69a7e6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\android\Beacathon\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="E:\android\Beacathon\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.0.1_da81dd554df5aba4ee719ae96cc57b7025c5184f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Deepak Garg\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.6.1\b9d63507329a7178e026fc334f87587ee5070ac5\gson-2.6.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b9d63507329a7178e026fc334f87587ee5070ac5">
+        <dex dex="E:\android\Beacathon\app\build\intermediates\pre-dexed\debug\gson-2.6.1_80759c53ee9dd995e728d76eb22e9e6692fd63a2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\android\Beacathon\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
+        <dex dex="E:\android\Beacathon\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-10.0.1_bd94b5afc1fe5d146c38b257530338130e6d54bc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\android\Beacathon\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="E:\android\Beacathon\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.1_34f9446811c103b3d4c7606dc5a8023e0c0c9a9f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\android\Beacathon\app\build\intermediates\exploded-aar\org.altbeacon\android-beacon-library\2.9.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b1c4132dd2d386a819199b7e738c4d6e60897670">
+        <dex dex="E:\android\Beacathon\app\build\intermediates\pre-dexed\debug\org.altbeacon-android-beacon-library-2.9.2_05811dbf33fbe96f5c0632ddd7305938a26ae4d7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\android\Beacathon\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
+        <dex dex="E:\android\Beacathon\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.1_9f7587441bbf873a1fe1628d78d0c1a4a421c642.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\android\Beacathon\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
+        <dex dex="E:\android\Beacathon\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-10.0.1_943b050bf4256e2edcb90d52615c4c3dc0e838a1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Deepak Garg\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.6.0\98476622f10715998eacf9240d6b479f12c66143\okio-1.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="E:\android\Beacathon\app\build\intermediates\pre-dexed\debug\okio-1.6.0_6fa129017b432f2dd519d8b08f521f3497fd8a4d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Deepak Garg\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="E:\android\Beacathon\app\build\intermediates\pre-dexed\debug\picasso-2.5.2_a36fb81539f176dca07a0162a19540dec502b817.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\android\Beacathon\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
+        <dex dex="E:\android\Beacathon\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.0.1_b2f13f91ce9f89c95c74d8d58b4c78a0650a91d4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\android\Beacathon\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
+        <dex dex="E:\android\Beacathon\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-10.0.1_60fa5d546051efcf9727f2f96e566ebb680ce170.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\android\Beacathon\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="E:\android\Beacathon\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.0.1_a99402e84348508f7a4597757bb1fd49bae738ec.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Deepak Garg\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.2.0\f7873a2ebde246a45c2a8d6f3247108b4c88a879\okhttp-3.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f7873a2ebde246a45c2a8d6f3247108b4c88a879">
+        <dex dex="E:\android\Beacathon\app\build\intermediates\pre-dexed\debug\okhttp-3.2.0_31e19359f4649ece5ab137a355ed30114bc9c671.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\android\Beacathon\app\build\intermediates\exploded-aar\com.android.support\transition\25.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c1b6ab157e8e12cb08b9ee82bb5e3c5d22632eb3">
+        <dex dex="E:\android\Beacathon\app\build\intermediates\pre-dexed\debug\com.android.support-transition-25.0.1_56d0cd3a25066103c8c7f3f8c890d7caaa7862ba.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\android\Beacathon\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
+        <dex dex="E:\android\Beacathon\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.0.1_954a0e2f96ff3b29f697165026dce34be48636f7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Deepak Garg\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\retrofit\2.0.0\5c06d197fb7fa875ad452f562e3310dd9949d066\retrofit-2.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="5c06d197fb7fa875ad452f562e3310dd9949d066">
+        <dex dex="E:\android\Beacathon\app\build\intermediates\pre-dexed\debug\retrofit-2.0.0_8a415a6fb2975822a6ec3cd3493e033a941bc906.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\android\Beacathon\app\build\intermediates\exploded-aar\com.android.support\design\25.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="3b236883e0df6002cabb01ce57d00a5b1e5de610">
+        <dex dex="E:\android\Beacathon\app\build\intermediates\pre-dexed\debug\com.android.support-design-25.0.1_0c79dc195a98abe1a09aea1095784198fb40f41f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\android\Beacathon\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
+        <dex dex="E:\android\Beacathon\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.1_30930b0a5d95f60fef3740d9ba81eb39fa05e21a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\android\Beacathon\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="E:\android\Beacathon\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.0.1_437d7d60ac90b189b6d4e2b7f23accb1a19c707e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\android\Beacathon\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e2185aff89caeb337b1ffc36d5e525d8318e7cfe">
+        <dex dex="E:\android\Beacathon\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-auth-10.0.1_35ee5a72069ea6a7922611a17c1ec7ae68e6c7b1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\android\Beacathon\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth-base\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e96c6974cf924e7ee3b230e6847d5731423388c9">
+        <dex dex="E:\android\Beacathon\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-auth-base-10.0.1_4a56ed2a9ed970aa2ecd799664e913c1888c895f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\android\Beacathon\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="E:\android\Beacathon\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.1_7cbc5186ec7466a2af5885393be71473fa1b02de.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\android\Beacathon\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
+        <dex dex="E:\android\Beacathon\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-25.0.1_3c8f27e5379b0cd1984a93b742b1e293abe99715.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\android\Beacathon\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
+        <dex dex="E:\android\Beacathon\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.0.1_c5c6b7d8b6128cf50527916d60d9caad6640d2c4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Deepak Garg\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-gson\2.0.0\49eb3ad545e7701234e4dd83db8dc1344b577f23\converter-gson-2.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="49eb3ad545e7701234e4dd83db8dc1344b577f23">
+        <dex dex="E:\android\Beacathon\app\build\intermediates\pre-dexed\debug\converter-gson-2.0.0_3f82098630b9463aa88fc31e40c45dc8e7e69241.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\android\Beacathon\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
+        <dex dex="E:\android\Beacathon\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.0.1_4456eb1933c499349b5cffe6806eeb405a858c01.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\android\Beacathon\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="E:\android\Beacathon\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.0.1_97a521e7a46541c5eb9c4fd79f214d147ec2a675.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.0.1\support-annotations-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
+        <dex dex="E:\android\Beacathon\app\build\intermediates\pre-dexed\debug\support-annotations-25.0.1_51ab30143fbff50b8779a9626e6d377c1c44e7c7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\android\Beacathon\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
+        <dex dex="E:\android\Beacathon\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.1_203284e9bddf2fc1c30cb8081be02bc3e52640be.jar" />
+    </item>
+
+</items>
