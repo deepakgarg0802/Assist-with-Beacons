@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Beacathon</string>
+    <string name="app_name">Deepak hackathon</string>
        <string name="permission_rationale">
         Location permission is required when scanning for beacons with Nearby.
     </string>
