@@ -13,6 +13,9 @@ Location Based Reminder + Dustbin/Washroom Finder
 * Enter the task to be shown and Add
 * Now go to that place to see the reminder
 
+##Run the app
+<iframe src="https://appetize.io/embed/z581rjnwk0mkw71xcb9jtaadrc?device=iphone5s&scale=50&autoplay=false&orientation=portrait&deviceColor=black" width="378px" height="400px" frameborder="0" scrolling="no"></iframe>
+        
 ##Restrooms/Dustbins
 Whenever a dustbin or Restroom equipped with beacon is found, notification is sent automatically
 
